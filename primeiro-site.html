@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openURL(url, mode) {
+            var win = window.open(url, mode);
+        }
+
+        function teste() {
+            let resposta = confirm('Você tem certeza que quer entrar no facebook do Einstein')
+            if (resposta) {
+                var music = document.getElementById('play');
+                music.play();
+            } else {
+                alert('Boa Escolha!')
+            }
+        }
+    </script>
+</head>
+<body>
+    <audio id="play">
+        <source src="Rick Astley - Never Gonna Give You Up (Official Music Video)_dQw4w9WgXcQ.mp3" type="audio/mp3">
+        <p>Seu navegador é uma merda</p>
+    </audio>
+    <header>
+            <h1>Albert Einstein</h1>
+            <p><em>“A imaginação é mais importante que o conhecimento.”</em></p>
+        <nav>
+            <div onclick="openURL('https://www.instagram.com/alberteinstein/', '_blank')">
+                <div class="logo" style="background-image: url('instagram.svg');"></div>
+                <p>Instagram</p>
+            </div>
+            <div onclick="openURL('whatsapp.html', '_self')">
+                <div class="logo" style="background-image: url('whatsapp.svg')";></div>
+                <p>Whatsapp</p>
+            </div>
+            <div onclick="openURL('https://www.youtube.com/@AlbertEinsteindark', '_blank')">
+                <div class="logo" style="background-image: url('youtube.svg');"></div>
+                <p>Youtube</p>
+            </div>
+            <div onclick="openURL('https://x.com/atssariiiiiii', '_blank')">
+                <div class="logo" style="background-image: url('twitter.svg');"></div>
+                <p>Twitter</p>
+            </div>
+            <div onclick="teste()">
+                <div class="logo" style="background-image: url('facebook.svg');"></div>
+                <p>Facebook</p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Início de vida</h2>
+            <article>
+                <h3 id="subtitulo">Primeiros anos e educação</h3>
+                <div id="paragrafo-foto">
+                    <abbr title="Imagem de Albert Einstein"><img id="foto" src="einstein-arquivo-afp.webp"></abbr>
+                    <p><strong>Albert Einstein</strong> nasceu em <a href="https://pt.wikipedia.org/wiki/Ulm" target="_blank">Ulm</a>, no Reino de Württemberg, Império Alemão (atual Baden-Württemberg, Alemanha), em 14 de março de 1879. Seus pais eram Hermann Einstein, um vendedor e engenheiro, e Pauline Einstein (nascida Koch). Os Einstein eram judeus asquenazes não praticantes. Em 1880 a família mudou-se para Munique, onde seu pai e tio fundaram a <a href="#">Elektrotechnische Fabrik J. Einstein & Cie</a>, empresa que fabricava equipamentos elétricos acionados por corrente contínua. Um ano mais tarde seus pais deram à luz a uma menina, Maria "Maja" Einstein, sua irmã mais nova. Com cinco anos de idade o jovem Albert estudou em uma escola primária católica durante três anos. Aos oito foi transferido para o <a href="#">Ginásio Luitpold</a>, hoje conhecido como Ginásio Albert Einstein, onde recebeu educação escolar primária e secundária, até deixar a Alemanha sete anos depois. Seu tio Jacob, um engenheiro, e Max Talmey, um jovem estudante pobre de medicina que jantava na casa da família uma vez por semana entre 1889 e 1894, foram grandes influências durante seus anos de formação. Eles incentivaram sua curiosidade inerente e insaciável sobre tudo. Talmey trouxe livros populares de ciência, incluindo Crítica da Razão Pura de Immanuel Kant, que Einstein começou a ler.</p>
+                </div>
+                <h2>Principais feitos quando ainda era um bebê</h2>
+                <ul>
+                    <li>Cagou na cama</li>
+                    <li>Dormiu pra caralho</li>
+                    <li>Usuario de crack</li>
+                    <li>Bateu a cabeça num buraco negro (por isso o cabelo esquisito)</li>
+                    <li>Chupou os peito do pai achando que ia sair leite</li>
+                    <li>Tomou Toddy sem mexer</li>
+                    <li>Ganhou o Concurso de Bebê mais feio de Ulm</li>
+                </ul>
+                <aside>
+                    <p class="fonte">Fonte: <a href="https://pt.wikipedia.org/wiki/Albert_Einstein" target="_blank">Albert Einstein [wikipedia]</a></p>
+                </aside>
+            </article>
+            <h2>Documentario de Vida</h2>
+            <div id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UnSA27a00To?si=Fb-PJ_SovSTgrVqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <footer>
+            <section>
+                <h3 style="margin: 0px;">Desenvolvido por Maiksuel Gueimepleys</h3>
+            </section>
+        </footer>
+    </main>
+    
+</body>
+</html>
